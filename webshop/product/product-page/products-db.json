@@ -1,0 +1,9 @@
+{
+    "products": {
+        "123": {
+            "name": "my product 1",
+            "description": "this is awesome",
+            "image": "img1.png"
+        }
+    }
+}

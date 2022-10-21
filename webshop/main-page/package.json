@@ -1,0 +1,11 @@
+{
+  "name": "main-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "simplehttpserver -b localhost -p 5001 ."
+  },
+  "author": "",
+  "license": "ISC"
+}

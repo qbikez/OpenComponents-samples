@@ -1,0 +1,28 @@
+{
+  "name": "product-page",
+  "description": "",
+  "version": "1.0.0",
+  "oc": {
+    "files": {
+      "data": "server.js",
+      "static": [
+        "img"
+      ],
+      "template": {
+        "src": "template.jade",
+        "type": "oc-template-jade"
+      }
+    },
+    "parameters": {
+      "productId": {
+        "description": "id of the product to display",
+        "example": "123",
+        "mandatory": true,
+        "type": "string"
+      }
+    }
+  },
+  "devDependencies": {
+    "oc-template-jade-compiler": "7.3.0"
+  }
+}
