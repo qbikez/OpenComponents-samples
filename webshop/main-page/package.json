@@ -7,5 +7,8 @@
     "start": "simplehttpserver -b localhost -p 5001 ."
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "simplehttpserver": "^0.3.0"
+  }
 }

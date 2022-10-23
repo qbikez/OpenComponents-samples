@@ -1,4 +1,4 @@
-import * as db from './products-db.json';
+import * as db from '../products-db.json';
 
 export const data = (context, callback) => {
   const { productId } = context.params;

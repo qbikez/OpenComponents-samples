@@ -1,10 +1,10 @@
 {
-  "name": "webshop",
+  "name": "checkout",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "oc dev . 3030"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
