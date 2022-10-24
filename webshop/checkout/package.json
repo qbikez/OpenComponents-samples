@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env TSC_SKIP_TYPECHECK=true OC_DISABLE_ESLINT=true DISABLE_ESLINT_PLUGIN=true oc dev . 3040 --fallbackRegistryUrl http://localhost:3050"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "oc": "^0.49.18"
+  }
 }

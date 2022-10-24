@@ -1,1 +1,1 @@
-/// <reference types="oc-template-typescript-react" />
+/// <reference types="oc-template-typescript-react-compiler" />

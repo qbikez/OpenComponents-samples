@@ -1,8 +1,20 @@
 {
   "prices": [
     {
-      "productId": "123",
+      "productId": "croissant",
       "price": 99.99
+    },
+    {
+      "productId": "rogal",
+      "price": 88.12
+    },
+    {
+      "productId": "doughnut",
+      "price": 12.34
+    },
+    {
+      "productId": "doughnut-ping",
+      "price": 12.34
     }
   ]
 }

@@ -1,6 +1,23 @@
-img(src= '#{staticPath}img/#{product.image}')
-
 h1 #{product.name}
+img(src='#{staticPath}img/#{product.image}' width='300px' height='300px')
 div #{product.description}
 
 oc-component(href='#{baseUrl}price/1.x.x?productId=#{productId}')
+
+script(type='text/javascript').
+    window.oc.cmd.push(oc => {
+        oc.events.on('webshop:price-clicked:#{productId}', (eventDetails,
+            eventData) => {
+            console.log('price clicked');
+            const { productId: id, price } = eventData;
+            const data = {
+                 id,
+                 description: '#{product.description}',
+                 image: '#{staticPath}img/#{product.image}',
+                 price,
+                 title: '#{product.name}',
+                 amount: 1
+            };
+            oc.events.fire('webshop:add-to-cart', data);
+        });
+    })

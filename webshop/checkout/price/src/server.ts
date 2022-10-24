@@ -10,5 +10,5 @@ export async function data(
   const { productId } = context.params;
   const product = db.prices.find((p) => p.productId === productId);
 
-  return callback(null, { price: product!.price });
+  return callback(null, { price: product!.price, productId });
 }

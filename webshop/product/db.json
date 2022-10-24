@@ -1,0 +1,14 @@
+{
+    "products": {
+        "rogal": {
+            "name": "Rogal",
+            "description": "yummi!",
+            "image": "rogal-marcinski.jpeg"
+        },
+        "croissant": {
+            "name": "Croissant",
+            "description": "yummi!",
+            "image": "croissant.webp"
+        }
+    }
+}

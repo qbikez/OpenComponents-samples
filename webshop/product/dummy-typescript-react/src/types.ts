@@ -1,12 +1,14 @@
 type Callback<T> = (error: Error | null, data: T) => void;
 
 export interface OcParameters {
-  productId: string;
+  userId: number;
+  getMoreData?: boolean;
 }
 
 export interface ClientProps {
-  price: number;
-  productId: string;
+  userId: number;
+  firstName: string;
+  lastName: string;
 }
 
 export interface AdditionalData {

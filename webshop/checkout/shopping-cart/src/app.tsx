@@ -10,7 +10,7 @@ const App: React.FC<AppProps & GetData> = (props: AppProps & GetData) => {
 
   return (
     <ComponentContext.Provider value={{ logger, getData }}>
-      <ShoppingCart name={name}></ShoppingCart>
+      <ShoppingCart></ShoppingCart>
     </ComponentContext.Provider>
   );
 };

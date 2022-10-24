@@ -1,6 +1,6 @@
 import { Badge, Button, Drawer, Grid, LinearProgress } from "@material-ui/core";
 import { AddShoppingCart } from "@material-ui/icons";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { CartItemType } from "../interfaces";
 import Cart from "./Cart";
@@ -18,6 +18,16 @@ export function ShoppingCart() {
   const [cartOpen, setCartOpen] = useState(false);
   const [cartItems, setCartItems] = useState<CartItemType[]>([]);
 
+  useEffect(() => {
+    window.oc.cmd.push((oc) => {
+      oc.events.on("webshop:add-to-cart", (_eventDetails, eventData) => {
+        const item = eventData as CartItemType;
+        console.log("adding item to cart");
+        console.log(item);
+        handleAddToCart(item);
+      });
+    });
+  }, []);
   // const { data, isLoading, error } = useQuery<CartItemType[]>(
   //   "products",
   //   getProducts

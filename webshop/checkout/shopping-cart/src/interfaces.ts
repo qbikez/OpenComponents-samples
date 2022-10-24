@@ -2,7 +2,7 @@ import { GenericContext } from './OCContext';
 import { ClientLogger } from './utils/clientLogger';
 
 export type CartItemType = {
-  id: number;
+  id: string;
   category: string;
   description: string;
   image: string;

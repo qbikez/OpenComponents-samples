@@ -1,14 +1,15 @@
 {
   "name": "product",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "oc dev . 3030"
+    "start": "oc dev . 3030 --fallbackRegistryUrl http://localhost:3040"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "oc": "^0.49.18"
-  }
+    "oc": "^0.49.18",
+    "oc-template-typescript-react": "^3.1.3"
+  },
+  "description": ""
 }
